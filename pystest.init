@@ -1,0 +1,11 @@
+[pytest]
+testpaths = tests
+python_files = test_*.py
+python_classes = Test*
+python_functions = test_*
+addopts = -v --strict-markers --tb=short
+
+markers =
+    unit: Pruebas unitarias
+    integration: Pruebas de integración
+    e2e: Pruebas end-to-end
